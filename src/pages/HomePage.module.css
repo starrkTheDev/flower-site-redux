@@ -1,0 +1,250 @@
+/* First div */
+
+.home_main {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 90%;
+}
+
+.flexdiv1 {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    justify-content: flex-end;
+}
+
+.phrase {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    line-height: 90px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+
+.direct {
+    background-color: inherit;
+    font-size: 26px;
+    border: solid 2px black;
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 30px;
+    max-width: 200px;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+.link {
+    text-decoration: none;
+    padding: 10px 30px;
+    color: black;
+    transition: 0.3s;
+}
+
+.link:hover {
+    color: white;
+}
+
+.direct:hover {
+    background-color: olivedrab;
+    border: 2px solid olivedrab;
+}
+
+@media (max-width:450px) {
+    .link {
+        padding: 10px 12px;
+        color: white;
+    }
+
+    .flexdiv1 {
+        width: 68vw;
+    }
+
+    .direct {
+        background-color: olivedrab;
+        border: 2px solid olivedrab;
+    }
+
+}
+
+@media (orientation: landscape) and (max-width: 1000px) {
+    .flexdiv1 {
+        height: 80vh;
+    }
+
+    .phrase {
+        margin-left: 130px;
+    }
+
+    .direct {
+        margin-left: 0;
+        background-color: olivedrab;
+        border: 2px solid olivedrab;
+    }
+
+}
+
+/* Second div -----------------------------------------------*/
+
+.home_second {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 90%;
+}
+
+.flexdiv2 {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    justify-content: flex-end;
+}
+
+.second_phrase {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    line-height: 90px;
+    margin-left: 20px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.direct_second {
+    background-color: inherit;
+    font-size: 26px;
+    border: solid 2px black;
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+.direct_second:hover {
+    background-color: green;
+    border: 2px solid green;
+}
+
+@media (max-width:1188px) {
+    .second_phrase {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .flexdiv2 {
+        height: 35vh;
+    }
+}
+
+@media (max-width:1188px) {
+    .flexdiv2 {
+        width: 95vw;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1000px) {
+    .flexdiv2 {
+        height: 50vh;
+    }
+
+    .link {
+        color: white;
+    }
+
+    .direct_second {
+        margin-top: 20px;
+        background-color: green;
+        border: 2px solid green;
+    }
+}
+
+@media (max-width:500px) {
+    .direct_second {
+        margin-top: 20px;
+        background-color: green;
+        border: 2px solid green;
+    }
+}
+
+/* Third div -----------------------------------------------*/
+
+.home_third {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 90%;
+}
+
+.flexdiv3 {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+}
+
+.third_phrase {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    line-height: 90px;
+    max-width: 500px;
+    margin-left: 80px;
+    text-align: center;
+}
+
+.direct_third {
+    background-color: inherit;
+    font-size: 26px;
+    border: solid 2px black;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-left: 70px;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+.direct_third:hover {
+    background-color: palevioletred;
+    border: 2px solid palevioletred;
+}
+
+@media (max-width:1150px) {
+    .flexdiv3 {
+        width: 70vw;
+    }
+}
+
+@media (max-width:456px) {
+    .flexdiv3 {
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 450px) {
+    .flexdiv3 {
+        width: 80vw;
+        height: 70vh;
+    }
+
+    .direct_third {
+        background-color: palevioletred;
+        border: 2px solid palevioletred;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1000px) {
+    .flexdiv3 {
+        justify-content: center;
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .direct_third {
+        background-color: palevioletred;
+        border: 2px solid palevioletred;
+    }
+}

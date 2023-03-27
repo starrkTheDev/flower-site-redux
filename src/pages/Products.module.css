@@ -1,0 +1,19 @@
+.background {
+    background-color: white;
+}
+
+.wrapper {
+    margin: auto;
+    width: 80vw;
+    min-height: 95vh;
+    max-width: 1440px;
+    background-color: white;
+    padding: 100px 50px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+}

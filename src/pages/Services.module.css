@@ -1,0 +1,56 @@
+.background {
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    height: 70vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 0;
+}
+
+.paragraph {
+    font-weight: bold;
+}
+
+@media(max-width:1130px) {
+    .wrapper {
+        width: 50vw;
+    }
+}
+
+@media(max-width:1000px) and (orientation:landscape) {
+    .wrapper {
+        width: 70vw;
+        height: 75vh;
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+}
+
+@media(max-width:700px) {
+    .wrapper {
+        width: 60vw;
+        left: 50%;
+        height: 80vh;
+    }
+
+    .wrapper p {
+        border-top: 1px solid black;
+    }
+}

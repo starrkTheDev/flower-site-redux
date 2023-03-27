@@ -1,0 +1,64 @@
+.cartModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2px black;
+    width: 40vw;
+    min-height: 7vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 80vh;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 60%;
+}
+
+.buttons {
+    display: flex;
+    margin: 5px;
+    justify-content: flex-end;
+}
+
+.exitButton {
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #D21B1B;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+}
+
+.orderButton {
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #FF8000;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+}
+
+@media (max-width:1350px) {
+    .cartModal {
+        width: 60vw;
+    }
+}
+
+@media (max-width:640px) {
+    .cartModal {
+        width: 90vw;
+    }
+}

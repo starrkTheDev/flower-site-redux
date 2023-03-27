@@ -1,0 +1,210 @@
+/* Styles for the 1st part */
+
+.wrapper {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 90%;
+}
+
+.flexdiv1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 58%;
+    height: 85vh;
+    align-items: center;
+}
+
+.phrase {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+    line-height: 90px;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+
+.direct {
+    margin-top: 10px;
+    margin-left: 55px;
+    background-color: inherit;
+    font-size: 36px;
+    border: solid 2px black;
+    border-radius: 30px;
+    padding: 15px 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.direct:hover {
+    background-color: palevioletred;
+    border: 2px solid palevioletred;
+    color: white;
+}
+
+@media (max-width: 1168px) {
+    .phrase {
+        font-size: 6vw;
+    }
+
+    .direct {
+        font-size: 26px;
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width:420px) {
+    .phrase {
+        line-height: 70px;
+        margin-left: 80px;
+        text-align: center;
+    }
+
+    .direct {
+        background-color: palevioletred;
+        border: 2px solid palevioletred;
+        color: white;
+        margin-left: 78px;
+    }
+
+    .flexdiv1 {
+        width: 80vw;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1000px) {
+    .flexdiv1 {
+        height: 80vh;
+    }
+
+    .phrase {
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .direct {
+        background-color: palevioletred;
+        border: 2px solid palevioletred;
+        color: white;
+        margin-left: 70px;
+    }
+}
+
+/* Styles for the 2nd part */
+
+.teamdiv {
+    width: 100%;
+    min-height: 95vh;
+    background-color: papayawhip;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.photo {
+    width: 18vw;
+    height: 25vw;
+    border-radius: 15px;
+    box-shadow: 0px 3px 15px black;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 90%;
+}
+
+.photoDiv {
+    position: relative;
+}
+
+.text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 0%;
+    font-size: 2vw;
+    width: 100%;
+    height: 25vw;
+    transition: 0.3s;
+    opacity: 0%;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.text:hover {
+    opacity: 70%;
+}
+
+.bio {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.6vw;
+    line-height: 3vw;
+    width: 100%;
+    z-index: 25;
+    color: white;
+    padding: 15px;
+}
+
+.name {
+    position: absolute;
+    top: 105%;
+    line-height: 2vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 1000px) {
+    .teamdiv {
+        min-height: 95vh;
+        padding: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text {
+        transform: translateX(100%);
+        background-color: inherit;
+        opacity: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bio {
+        color: black;
+        font-size: 4vw;
+        min-width: 500px;
+        line-height: 4vw;
+        padding: 5px 15px;
+    }
+
+    .name {
+        font-size: 5vw;
+        top: 102%;
+    }
+
+    .text:hover {
+        opacity: 100%;
+    }
+
+    .photoDiv {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:664px) {
+    .bio {
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 420px) {
+    .teamdiv {
+        padding-left: 20px;
+    }
+
+    .bio {
+        padding: 15px 15px;
+    }
+}

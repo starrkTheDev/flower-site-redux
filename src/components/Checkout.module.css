@@ -1,0 +1,131 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 60%;
+}
+
+.form {
+    margin-top: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2px black;
+    border-radius: 10px;
+    width: 50vw;
+    min-height: 50vh;
+    max-height: 90vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow-y: auto;
+}
+
+.data_div {
+    margin-top: 20px;
+}
+
+.input_div {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.input_div label {
+    width: 200px;
+}
+
+.terms_div {
+    display: flex;
+    width: 340px;
+    justify-content: space-between;
+}
+
+.submit_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    width: 340px;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.buttons button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.backButton {
+    background-color: #D21B1B;
+}
+
+.submitButton {
+    background-color: #FF8000;
+}
+
+.price {
+    font-size: 24px;
+}
+
+@media (max-width: 1460px) {
+    .form {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .form {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .form {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .input_div {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    .terms_div {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .terms_div p {
+        margin-right: 20px;
+    }
+
+    .input_div label {
+        width: 145px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .price {
+        margin-bottom: 10px;
+    }
+}

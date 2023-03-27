@@ -1,0 +1,66 @@
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    min-width: 100px;
+    text-align: center;
+    line-height: 35px;
+    max-width: 100px;
+}
+
+.total {
+    min-width: 40px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.buttons {
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons button {
+    padding: 4px;
+    background-color: inherit;
+    border: 2px solid black;
+    min-width: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.remove {
+    display: flex;
+    align-items: center;
+}
+
+.remove button {
+    padding: 4px;
+    background-color: inherit;
+    border: 2px solid black;
+    min-width: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
